@@ -10,9 +10,13 @@
   "author": "Ishan Soni",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "http-status-codes": "^2.1.4",
-    "mongoose": "^6.0.7"
+    "mongoose": "^6.0.7",
+    "shortid": "^2.2.16"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"

@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #a09e9e;
+  font-family: "Space Grotesk", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  text-shadow: 0px 0px 20px #aaaaaa;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 1.2em;
+}
+#textbox {
+  border: none;
+  font-size: 1.07rem;
+  padding: 0.5em 0.9em;
+  border-radius: 2px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+#submit-button {
+  border: none;
+  color: #4c4c4c;
+  padding: 0.5em 1.2em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  font-family: "Space Grotesk", sans-serif;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  transition: all ease-in-out 0.35s;
+}
+#submit-button:hover {
+  box-shadow: -6px -6px 12px #c5c5c5, 6px 6px 12px #4c4e41dc;
+  cursor: pointer;
+}
+h1 {
+  margin: 1em 0 0 0;
+}
+h3 {
+  margin: 1em 0 0.5em 0;
+}
+h5 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+a {
+  color: #4c4e41dc;
+}
+#example-link {
+  margin: 1em 0 1em 0;
+}
+span {
+  background: white;
+}
+/* @media screen and (min-width: 860px) {
+  .container {
+    width: 840px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+} */
+/* @media screen and (min-width: 1050px) {
+  .container {
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+} */

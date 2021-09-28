@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Short It</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SHORT IT</h1>
+      <p>A URL Shortening Microservice</p>
+      <h3>Type your URL below:</h3>
+      <form action="/api/v1/shorturl" method="POST">
+        <div class="form-container">
+          <input
+            type="text"
+            placeholder="http://www.example.com"
+            name="url"
+            id="textbox"
+          />
+          <input type="submit" id="submit-button" value="POST URL" />
+        </div>
+      </form>
+      <h5>
+        Example Output:
+        <span
+          >{orignal_url: 'http://www.google.com', short_url: 'uniqueId'}</span
+        >
+      </h5>
+      <h5 id="example-link">
+        Example Usage:
+        <a href="/api/v1/shorturl/BQSlAoh0s"
+          >[shortit]/api/v1/shorturl/uniqueId</a
+        >
+      </h5>
+    </div>
+  </body>
+</html>
